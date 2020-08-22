@@ -1,11 +1,13 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #EAEBF0;
+  color: #5A6177;
+  font-family: 'Baloo Tamma 2', cursive;;
   display: flex;
   align-items: center;
   justify-content: center;
