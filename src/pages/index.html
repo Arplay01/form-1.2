@@ -11,50 +11,53 @@
 </head>
 
 <body>
-  <main>
-    <form class="" action="https://dev.cotenfrontend.pl" method="POST">
-      <div class="">
+  <main class="main">
+    <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
+      <div class="wrapper wrapper__one">
         <fieldset class="initial initial__fieldset">
-          <p>Czy jesteś z nami?</p>
-          <p>
-            <label><input type="radio" name="choice" value="yes">TAK</label>
+          <p class="initial__question">Czy jesteś z nami?</p>
+          <p class="initial__choice">
+            <label><input class="radio__item" type="radio" name="choice" value="yes">TAK</label>
           </p>
-          <p>
-            <label><input type="radio" name="choice" value="no">NIE</label>
+          <p class="initial__choice">
+            <label><input class="radio__item" type="radio" name="choice" value="no">NIE</label>
           </p>
         </fieldset>
         <fieldset class="general general__fieldset">
-          <p>
-            <label>Imię
-              <input type="text" name="firstName">
-            </label>
-          </p>
-          <p>
-            <label>Nazwisko
-              <input type="text" name="lastName">
-            </label>
-          </p>
+          <div class="wrapper__block">
+            <p class="general__block general__block--special">
+              <label>Imię
+                <input class="general__text" type="text" name="firstName">
+              </label>
+            </p>
+            <p class="general__block general__block--special">
+              <label>Nazwisko
+                <input class="general__text" type="text" name="lastName">
+              </label>
+            </p>
+          </div>
           <p>
             <label>Adres e-mail
-              <input type="email" name="email">
+              <input class="general__text" type="email" name="email">
             </label>
           </p>
           <p>
             <label>Numer telefonu
-              <input type="tel" name="phoneNumber">
+              <input class="general__text" type="tel" name="phoneNumber">
             </label>
           </p>
         </fieldset>
         <fieldset class="details details__fieldset">
-          <p>
+          <p class="detals__paragraph">
             <label>Adres zamieszkania
-              <input type="text" name="adress">
+              <input class="details__text" type="text" name="adress">
             </label>
           </p>
-          <p>
+          <div class="wrapper__block">
+          <p class="general__block general__block--special">
             <label class="" for="shoeSize">Rozmiar buta</label>
-            <select name="shoeSize" id="shoeSize">
-              <option value="null">wybierz rozmiar</option>
+            <select class="details__text" name="shoeSize" id="shoeSize">
+              <option value="null"></option>
               <option value="">34</option>
               <option value="">35</option>
               <option value="">36</option>
@@ -74,50 +77,49 @@
               <option value="">50</option>
             </select>
           </p>
-          <p>
+          <p class="general__block general__block--special">
             <label>Kod pocztowy
-              <input type="text" name="postCode">
+              <input class="details__text" type="text" name="postCode">
             </label>
           </p>
+        </div>
         </fieldset>
       </div>
-      <div class="">
+      <div class="wrapper wrapper__two">
         <fieldset class="message message__fieldset">
           <p>
-            <label>Treść waidomości
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <label>Treść wiadomości
+              <textarea class="message__text" name="message" id="" cols="30" rows="10" maxlength="700" placeholder="Nie wahaj się i śmiało pisz!"></textarea>
             </label>
           </p>
         </fieldset>
         <fieldset class="agreements agreements__fieldset">
-<p>
-  <label>
-    <input type="checkbox" name="mainMarketingAgreement" required>
-  </label>
-</p>
-<p>
-  <label>
-    <input type="checkbox" name="additionalAgreement">
-  </label>
-</p>
+          <p>
+            <label class="agreements__label">
+              <input class="agreements__checkbox agreements__checkbox--required" type="checkbox" name="mainMarketingAgreement" required>
+              Oświadczam, że zapoznałem się z informacjami o przetwarzaniu danych osobowych znajdującymi się w Polityce
+              Prywatności
+            </label>
+          </p>
+          <p>
+            <label class="agreements__label">
+              <input class="agreements__checkbox" type="checkbox" name="additionalAgreement">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych, w tym na otrzymywania
+              newslettera, zawierającego promocje i ofety handlowe
+            </label>
+          </p>
 
         </fieldset>
-
+<fieldset class="submit submit__fieldset">
         <input class="submit__button" type="submit" value="wyslij">
-
+      </fieldset>
 
       </div>
-
-
-
-
-
     </form>
-
-
-
-
   </main>
+  <footer>
+    <p class="footer_paragraph">inspired by <a href="https://github.com/nenyancodes">nenyancodes</a></p>
+  </footer>
 </body>
 
 </html>
